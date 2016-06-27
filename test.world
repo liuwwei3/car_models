@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<sdf version="1.4">
+  <world name="default">
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- load apple model directly -->
+    <!--
+    <include>
+      <uri>model://apple</uri>
+    </include>
+    -->
+
+    <!-- load apple model via apple world plugin -->
+    <plugin name="apple_world_plugin" filename="libapple_world.dylib" />
+
+  </world>
+</sdf>

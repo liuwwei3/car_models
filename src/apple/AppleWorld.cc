@@ -1,4 +1,4 @@
-// a world plugin that gravity = (0, 0, 0.05)
+// a world plugin that gravity = (0, 0, -0.1)
 // author: liuweiwei02 <liuweiwei02@baidu.com>
 
 #include <gazebo/common/common.hh>
@@ -15,7 +15,7 @@ public:
     void Load(physics::WorldPtr _world, sdf::ElementPtr _ele ){
         _world->InsertModelFile("model://apple");
         printf("mow loading world plugin...\n");
-        _world->SetGravity(ignition::math::Vector3d(0, 0, 0.05));
+        _world->SetGravity(ignition::math::Vector3d(0, 0, -0.1));
     }
 
 };

@@ -1,4 +1,4 @@
-// a simple apple plugin 
+// a simple car model plugin 
 // author : liuweiwei <liuweiwei02@baidu.com>
 
 #include <boost/bind.hpp>
@@ -10,7 +10,7 @@
 
 namespace gazebo {
 
-class ApplePlugin : public ModelPlugin {
+class CarPlugin : public ModelPlugin {
 
 public:
     void Load( physics::ModelPtr _model, sdf::ElementPtr _element){
@@ -26,10 +26,8 @@ public:
     void onUpdate(const common::UpdateInfo _info) {
         // update rate: perhaps 100hz
         //this->model->SetLinearVel(math::Vector3(0.0, 0, 0.05));
-
-        // AddForceAtRelativePosition: arg1: force, arg2: position
         this->model->GetChildLink("applebody")->AddForceAtRelativePosition( \
-            math::Vector3(0.0, 0, 0.2), math::Vector3(0.0, 0, 0.5));
+            math::Vector3(0.0, 0, 0.0), math::Vector3(0.1, 0, 0.5));
     }
 
 private:

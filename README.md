@@ -17,6 +17,6 @@ brew install gazebo7
 
  * 1. 编译: sh build.sh
  * 2. source setup_running_env.sh
- * 3. 运行demo: gazebo test.world
+ * 3. 运行demo: gazebo worlds/test.world
    
    效果：一个缓慢飞起的apple

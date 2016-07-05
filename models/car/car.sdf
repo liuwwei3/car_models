@@ -130,6 +130,9 @@
                 <upper>0.8</upper>
                 <lower>-0.8</lower>
             </limit>
+            <dynamics>
+                <friction>10.0</friction>
+            </dynamics>
         </axis>
     </joint>
     <joint name="jFLsteer" type="revolute">
@@ -141,6 +144,9 @@
                 <upper>0.8</upper>
                 <lower>-0.8</lower>
             </limit>
+            <dynamics>
+                <friction>10.0</friction>
+            </dynamics>
         </axis>
     </joint>
     <joint name="jFR" type="revolute">
@@ -171,6 +177,7 @@
             <xyz>0 1 0</xyz>
         </axis>
     </joint>
+    <plugin name="car_plugin" filename="libcar_model.dylib" />
 </model>
 </sdf>
 

@@ -12,3 +12,6 @@ target_link_libraries(apple_model ${GAZEBO_LIBRARIES} ${Boost_LIBRARIES})
 
 add_library(apple_world SHARED apple/AppleWorld.cc)
 target_link_libraries(apple_world ${GAZEBO_LIBRARIES} ${Boost_LIBRARIES})
+
+add_library(car_model SHARED car/CarModel.cc)
+target_link_libraries(car_model ${GAZEBO_LIBRARIES} ${Boost_LIBRARIES})

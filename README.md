@@ -20,3 +20,11 @@ brew install gazebo7
  * 3. 运行demo: gazebo worlds/test.world
    
    效果：一个缓慢飞起的apple
+
+###汽车
+
+ * gazebo worlds/car.world
+
+    效果：汽车缓慢转圈
+
+

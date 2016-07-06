@@ -131,7 +131,7 @@
                 <lower>-0.8</lower>
             </limit>
             <dynamics>
-                <friction>10.0</friction>
+                <friction>2.0</friction>
             </dynamics>
         </axis>
     </joint>
@@ -145,7 +145,7 @@
                 <lower>-0.8</lower>
             </limit>
             <dynamics>
-                <friction>10.0</friction>
+                <friction>2.0</friction>
             </dynamics>
         </axis>
     </joint>

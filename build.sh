@@ -15,7 +15,7 @@ fi
 
 cd build
 
-cmake ../src/
+cmake ../src/ -Wno-dev
 
 make
 
